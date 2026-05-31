@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔐 Cofre Binário Karatsuba</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <!-- Cabeçalho -->
+        <header class="header">
+            <h1 class="title">🔐 Cofre Binário Karatsuba</h1>
+            <p class="subtitle">Divida, Conquiste e Abra o Cofre Digital</p>
+        </header>
+
+        <!-- Conteúdo Principal -->
+        <main class="main-content">
+            <div class="card welcome-card">
+                <div class="icon-large">💻</div>
+                
+                <h2>Bem-vindo ao Desafio!</h2>
+                
+                <div class="description">
+                    <p>
+                        <strong>Seu objetivo:</strong> Resolver multiplicações de números binários 
+                        e abrir o cofre digital usando o poderoso algoritmo <strong>Karatsuba</strong>.
+                    </p>
+                    
+                    <h3>🧠 O que você vai aprender:</h3>
+                    <ul>
+                        <li><strong>Algoritmo Karatsuba</strong> - Multiplicação rápida em binário</li>
+                        <li><strong>Dividir e Conquistar</strong> - Estratégia de resolução de problemas</li>
+                        <li><strong>Números Binários</strong> - A linguagem do computador</li>
+                        <li><strong>Complexidade Computacional</strong> - Por que Karatsuba é melhor</li>
+                    </ul>
+
+                    <h3>📊 Como funciona:</h3>
+                    <ol>
+                        <li>Você verá <strong>dois números binários</strong> para multiplicar</li>
+                        <li>Digite a <strong>resposta em binário</strong> (usando apenas 0 e 1)</li>
+                        <li>O sistema verifica sua resposta e mostra <strong>como Karatsuba resolveu</strong></li>
+                        <li>Há <strong>5 fases</strong>, começando com 4 bits até 8 bits</li>
+                        <li>Cada acerto = <strong>10 pontos</strong></li>
+                    </ol>
+
+                    <h3>⚡ Dica:</h3>
+                    <p>
+                        Se você digitar a resposta errada, não se preocupe! 
+                        Você verá o <strong>passo a passo completo</strong> de como o Karatsuba 
+                        resolveu a multiplicação, mostrando todas as divisões recursivas.
+                    </p>
+                </div>
+
+                <a href="{{ url_for('game') }}" class="btn btn-primary btn-large">
+                    🎮 Começar Jogo
+                </a>
+            </div>
+
+            <footer class="footer-index">
+                <p>💡 <em>Desenvolvido com ❤️ para ensinar algoritmos através de jogos</em></p>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>
