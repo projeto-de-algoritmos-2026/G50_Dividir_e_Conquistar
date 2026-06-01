@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📊 Resultado - Cofre Binário Karatsuba</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <!-- Cabeçalho -->
+        <header class="header">
+            <h1 class="title">🔐 Cofre Binário Karatsuba</h1>
+            <p class="subtitle">📊 Resultado e Análise</p>
+        </header>
+
+        <!-- Conteúdo Principal -->
+        <main class="main-content result-content">
+            <!-- Placeholder para conteúdo dinâmico -->
+            <div id="result-container">
+                <!-- Será preenchido dinamicamente via JavaScript -->
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer-result">
+            <a href="{{ url_for('reset') }}" class="btn btn-secondary">🏠 Volta ao Início</a>
+        </footer>
+    </div>
+
+    <script>
+        // Este arquivo é carregado via renderização do jogo.html com dados JSON
+        // Nenhuma lógica adicional necessária aqui, pois o resultado é renderizado
+        // dinamicamente pelo script.js quando a resposta é verificada.
+    </script>
+</body>
+</html>

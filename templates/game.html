@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎮 Jogo - Cofre Binário Karatsuba</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <!-- Cabeçalho com Fase e Pontuação -->
+        <header class="header game-header">
+            <div class="header-info">
+                <div class="phase-badge">
+                    Fase <span id="phase-number">{{ fase }}</span>/5
+                </div>
+                <div class="score-badge">
+                    Pontos: <span id="score">{{ pontuacao }}</span>
+                </div>
+            </div>
+            <h1 class="title">🔐 Cofre Binário Karatsuba</h1>
+        </header>
+
+        <!-- Conteúdo Principal do Jogo -->
+        <main class="main-content game-content">
+            <!-- Card do Cofre -->
+            <div class="card cofre-card">
+                <div class="cofre-header">
+                    <h2>🔒 Resolva o Desafio</h2>
+                    <p class="cofre-subtitle">Multiplique os números binários abaixo</p>
+                </div>
+
+                <div class="numbers-section">
+                    <div class="binary-number">
+                        <label>Número 1:</label>
+                        <div class="binary-display" id="number1">{{ x }}</div>
+                    </div>
+
+                    <div class="operator">×</div>
+
+                    <div class="binary-number">
+                        <label>Número 2:</label>
+                        <div class="binary-display" id="number2">{{ y }}</div>
+                    </div>
+                </div>
+
+                <!-- Campo de Resposta -->
+                <div class="answer-section">
+                    <label for="answer-input">Sua resposta (em binário):</label>
+                    <input 
+                        type="text" 
+                        id="answer-input" 
+                        class="input-field"
+                        placeholder="Digite usando apenas 0 e 1"
+                        autocomplete="off"
+                        maxlength="32"
+                    >
+                    <small class="hint">Exemplo: 1011, 11010, 10001111</small>
+                    <div id="error-message" class="error-message" style="display: none;"></div>
+                </div>
+
+                <!-- Botão de Verificação -->
+                <button id="check-btn" class="btn btn-primary btn-large" disabled>
+                    ⚡ Verificar Resposta
+                </button>
+
+                <!-- Indicador de Carregamento -->
+                <div id="loading" class="loading" style="display: none;">
+                    ⏳ Processando com Karatsuba...
+                </div>
+            </div>
+
+            <!-- Seção de Feedback (oculta inicialmente) -->
+            <div id="feedback-section" class="feedback-section" style="display: none;">
+                <div id="feedback-card" class="card feedback-card">
+                    <!-- Será preenchido dinamicamente -->
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer-game">
+            <a href="{{ url_for('reset') }}" class="btn btn-secondary">🔄 Voltar ao Início</a>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
