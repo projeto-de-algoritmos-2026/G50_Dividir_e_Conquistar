@@ -1,4 +1,4 @@
-# 🔐 Cofre Binário Karatsuba
+# Cofre Binário Karatsuba
 
 Número da Lista: 50<br>
 Conteúdo da Disciplina: Dividir e Conquistar<br>
@@ -10,17 +10,17 @@ Conteúdo da Disciplina: Dividir e Conquistar<br>
 | 21/1063013 | Renata Quadros Kurzawa |
 
 ## Vídeo de Apresentação
-### Link do YouTube 
-link: (em breve)
+link: https://youtu.be/uSxDb7RCUg8
+
+[![Assista ao vídeo no YouTube](https://img.youtube.com/vi/uSxDb7RCUg8/hqdefault.jpg)](https://youtu.be/uSxDb7RCUg8)
 
 ## Sobre
 Cofre Binário Karatsuba é um jogo educativo com foco em conceitos de algoritmos de Dividir e Conquistar, especificamente o algoritmo de Karatsuba em números binários.
 
 Objetivos do projeto:
-- implementar o algoritmo de Karatsuba 100% em strings binárias;
+- implementar o algoritmo de Karatsuba;
 - demonstrar multiplicação rápida usando estratégia de Dividir e Conquistar;
 - visualizar recursão e passos computacionais de forma interativa;
-- ensinar conceitos de complexidade algorítmica (Karatsuba O(n^1.585) vs tradicional O(n²)).
 
 Como funciona:
 1. Sistema gera dois números binários aleatórios conforme a fase.
@@ -51,6 +51,7 @@ G50_Dividir_e_Conquistar/
 
 ![Tela inicial](docs/img/tela-inicial.png)
 ![Jogo em andamento](docs/img/jogo-em-andamento.png)
+![Cálculos](docs/img/Calculos.png)
 
 ## Instalação
 Linguagem: Python 3.7+<br>
